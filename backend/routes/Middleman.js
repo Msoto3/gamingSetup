@@ -31,7 +31,7 @@ router.post("/login",async(req,res)=>{
             if (!same) {
                 return res.json({ error: "Incorrect password" });
             }
-            const Token = sign({username:username,specs:user.specs},"importantToken")
+            const Token = sign({username:username,specs:user.specs},JWTSECRET)
             return res.json(Token);
         });
     } else {
