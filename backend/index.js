@@ -8,7 +8,7 @@ const userRouter = require("./routes/Middleman")
 dotenv.config()
 
 app.use(cors({
-    origin: ["http://localhost:3000"]
+    origin: ["https://gamingsetup-app.netlify.app/"]
 }))
 app.use(express.json())
 app.use(cors())
