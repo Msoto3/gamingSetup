@@ -7,11 +7,9 @@ const userRouter = require("./routes/Middleman")
 
 dotenv.config()
 
-app.use(cors({
-    origin: ["https://gamingsetup-app.netlify.app/"]
-}))
-app.use(express.json())
 app.use(cors())
+app.use(express.json())
+
 
 mongoose.connect(process.env.MONGODB)
 
