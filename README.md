@@ -1,0 +1,1 @@
+### This is a gaming setup builder for begineers, I've done the research and picked out what is the most viable specs for the general person, depending on their preference so that someone new doesn't get overwhelemed by the amount of information that is online and they might even pick something that isn't too good. I made this project utilizing the MERN stack
