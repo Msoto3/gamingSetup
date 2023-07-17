@@ -1,0 +1,306 @@
+body {
+  background-color: #121212;
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/*======================NavBar============================ */
+nav{
+  display: block;
+  margin: 0;
+  width: 100%;
+  background-color: #6200EE;
+  
+}
+nav ul{
+  overflow: hidden;
+  margin: 0;
+  padding: 0;
+}
+
+.navBar li{
+  list-style: none;
+  float: left;
+  display: flex;
+
+}
+li.right{
+  float:right;
+ 
+}
+li a{
+  text-decoration: none;
+  color: white ;
+  font-size: 20px;
+  text-decoration: none;
+  min-height: 16px;
+  text-align: center;
+  margin: 10px;
+  font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  font-weight: bold;
+  text-transform:uppercase ;
+  font-weight: 600;
+  cursor: pointer;
+  transition: 0.2s
+
+}
+li a:hover{
+  color: black;
+ 
+
+}
+
+li.menu{
+  display: none;
+  
+}
+
+/*=============login=================*/
+.login-container h2 {
+  color: white;
+}
+.signup-container p{
+  color: white;
+}
+.signup-container a{
+  text-decoration: none;
+  color: white;
+}
+.login-container {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  height: 100vh;
+}
+
+form {
+  width: 300px;
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  background-color: #f5f5f5;
+}
+
+.form-group {
+  margin-bottom: 20px;
+  padding: 10px;
+}
+
+label {
+  display: block;
+  font-weight: bold;
+}
+
+input[type='text'],
+input[type='password'] {
+  width: 100%;
+  padding: 10px;
+  border-radius: 4px;
+  border: 1px solid #ccc;
+}
+
+.login-container button {
+  width: 100%;
+  padding: 8px;
+  border: none;
+  border-radius: 4px;
+  background-color: #614caf;
+  color: #fff;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+
+
+
+
+/*============Home================*/
+.home{
+  width: 100%;
+  text-align: center;
+  color: white;
+}
+.home p{
+  font-size: 1.5rem;
+}
+.home img{
+  width: 50%
+}
+
+
+/*===================Headset.js*=========================*/
+.card {
+  box-shadow: 0 4px 8px 0 rgba(255, 255, 255, 0.993);
+  transition: 0.3s;
+  margin: 5px;
+  background-color: white;
+  border-radius: 10px;
+  width: 14rem;
+ 
+}
+
+
+.card img {
+  border-radius: 5px 5px 0 0;
+  width: 10rem;
+ 
+}
+
+.card:hover {
+  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+}
+
+
+.container {
+  padding: 2px 15px;
+}
+.headset-container{
+ 
+  
+    font-family: 'Courier New', Courier, monospace;
+   
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    flex: 1 1;
+    flex-wrap: wrap;
+}
+.headset-container a{
+  text-decoration: none;
+  color: #6200EE;
+  
+  border-radius: 50%;
+  padding: 5px;
+}
+
+/*======================MousePad.js=========================*/
+.padChoice{
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  color: white;
+  flex: 1 1;
+  
+}
+.padChoice div{
+  margin: 10px;
+  font-size: larger;
+}
+.padChoice button{
+  padding: 10px;
+  background-color: #6200EE;
+  border-radius: 5px;
+  
+}
+.padChoice button :hover{
+  opacity: 0.5;
+  color: white;
+}
+.padChoice a{
+  text-decoration: none;
+  color: black;
+}
+
+/*Disclaimers*/
+.disclaimer{
+  text-align: center;
+}
+.disclaimer h1{
+  color: red;
+}
+.disclaimer p{
+  color: white;
+  line-height: 1.5;
+  font-size: 24px;
+}
+.disclaimer button{
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  background-color: #6200EE;
+  color: white;
+  padding: 10px;
+}
+
+
+/* Mobile */
+@media screen and (max-width:768px) {
+
+  /*Header*/
+  li:not(:nth-child(1)){
+      display: none;
+  }
+  li.menu{
+      display: block;
+      margin: 10px;
+      float: right;
+  }
+  .navBar.responsive li.menu{
+      position: absolute;
+      right: 0;
+      top: 0;
+     
+  }
+
+  .navBar.responsive{
+      position: relative;
+      
+
+  }
+  .navBar.responsive li{
+      display: inline;
+      float: none;
+  }
+  .navBar.responsive li a{
+      display: block;
+      text-align: left;
+  }
+
+  
+  
+}
+
+
+
+  
+/*======================itemAdder=========================*/
+.itemAdd{
+  display: block;
+  padding: 10px;
+  background-color: #3579f7;
+  color: #000000;
+  font-weight: 700;
+  border: solid;
+  border-radius: 50px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+.itemAdd:hover{
+  background-color: #1ce9f8;
+}
+
+/*======================PROFILE=========================*/
+.itemDelete{
+  padding: 10px;
+  background-color: #3579f7;
+  font-weight: 700;
+  border:none;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+.itemDelete:hover{
+  background-color: #1ce9f8;
+}
+  
+
+  
+
+  
+  
+
