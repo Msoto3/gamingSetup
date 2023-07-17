@@ -44,6 +44,13 @@ const Header = () => {
   const handleClick = () =>{
     setClick(!clicked)
   }
+
+  window.addEventListener("beforeunload", (e)=>{
+      localStorage.removeItem("token")
+      setUsername("")
+      setLogged(false)
+      setUserSpecs({})
+  });
   return (
     <header>
             <nav >
