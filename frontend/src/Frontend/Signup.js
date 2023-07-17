@@ -21,9 +21,9 @@ const Sign= () => {
   const createUser = async () =>{
     const data = {username:username}
     try{
-      const response = await axios.get("http://localhost:5000/routes/getUsers",{params:data})
+      const response = await axios.get("https://gamesetup-api.onrender.com/routes/getUsers",{params:data})
       if(response.data.error) return false
-      await axios.post("http://localhost:5000/routes/createUser",{
+      await axios.post("https://gamesetup-api.onrender.com/routes/createUser",{
         username,
         password,
         specs
