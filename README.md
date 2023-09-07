@@ -3,3 +3,5 @@
 ## Note: this is meant to be a recreational project and is not meant to outperform more experienced user that can get custom parts for certain specs such as the pc and keyboard. Someone may even find endgame gear with the choices I've made
 
 ## Tip: Be sure to logout once you are done
+
+## Link: https://accuzane.netlify.app/
