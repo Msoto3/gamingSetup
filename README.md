@@ -4,4 +4,3 @@
 
 ## Tip: Be sure to logout once you are done
 
-## Link: https://accuzane.netlify.app/
