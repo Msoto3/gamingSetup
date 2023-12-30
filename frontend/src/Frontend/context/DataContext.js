@@ -24,7 +24,7 @@ export const DataProvider = ({children}) =>{
 
     const updateSpecs = async(type,title,username) =>{
         try {
-          const response = await axios.put("https://gamesetup-api.onrender.com/routes/specs", { title:title,username:username,type:type},{headers:{token:localStorage.getItem("token")}})
+          const response = await axios.put("http://localhost:5000/routes/specs", { title:title,username:username,type:type},{headers:{token:localStorage.getItem("token")}})
           
           
           if(title==null){

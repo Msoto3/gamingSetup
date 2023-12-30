@@ -11,7 +11,7 @@ const Sign= () => {
 
   const login =() =>{
     const data = {username:username,password:password}
-    axios.post("https://gamesetup-api.onrender.com/routes/login",data).then((res)=>{
+    axios.post("http://localhost:5000/routes/login",data).then((res)=>{
       if(res.data.error){
         alert(res.data.error)
         

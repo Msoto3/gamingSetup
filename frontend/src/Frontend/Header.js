@@ -9,7 +9,7 @@ const Header = () => {
   const {logged,setLogged,username,setUsername,setUserSpecs} = useContext(DataContext)
 
   useEffect(()=>{
-      axios.get("https://gamesetup-api.onrender.com/routes/auth",{headers:{token: localStorage.getItem("token")}}).then((res)=>{
+      axios.get("http://localhost:5000/routes/auth",{headers:{token: localStorage.getItem("token")}}).then((res)=>{
         if(res.data.error){
           setLogged(false)
         }
